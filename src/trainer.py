@@ -1,4 +1,4 @@
-```python
+
 import os
 import urllib.request
 
@@ -13,9 +13,6 @@ from dataloader import InfiniGPT_dataloader
 
 
 def calc_loss_batch(input_batch, target_batch, model, device):
-    """
-    Compute loss for a single batch.
-    """
 
     input_batch = input_batch.to(device)
     target_batch = target_batch.to(device)
@@ -32,9 +29,6 @@ def calc_loss_batch(input_batch, target_batch, model, device):
 
 
 def calc_loss_loader(data_loader, model, device, num_batches=None):
-    """
-    Compute average loss across batches from a dataloader.
-    """
 
     total_loss = 0.0
 
